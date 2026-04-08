@@ -2909,3 +2909,328 @@ h2 { font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 600; }
   .pmod-specs-grid { grid-template-columns: repeat(2, 1fr); }
   .pmod-actions { flex-direction: column; }
 }
+
+
+/* ═══════════════════════════════════════════════════════════
+   SANDWORTH v5 — MULTI-PAGE ADDITIONS
+   Append these rules to the bottom of style.css
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── BREADCRUMB ── */
+
+.prop-breadcrumb {
+  background: var(--off-white);
+  border-bottom: 1px solid var(--gray-200);
+}
+.pbc-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: .78rem;
+  color: var(--gray-400);
+}
+.pbc-inner a {
+  color: var(--blue);
+  font-weight: 500;
+  transition: color var(--t);
+}
+.pbc-inner a:hover { color: var(--navy); }
+.pbc-sep { color: var(--gray-200); font-size: .8rem; }
+.pbc-inner [aria-current="page"] { color: var(--text-soft); font-weight: 500; }
+
+/* ── PROPERTY DETAIL PAGE ── */
+.prop-detail-page {}
+
+/* Hero gallery */
+.pdp-hero {
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  gap: 6px;
+  max-height: 540px;
+  overflow: hidden;
+  background: var(--navy-deep);
+}
+.pdp-hero-main {
+  position: relative;
+  overflow: hidden;
+}
+.pdp-hero-main img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  display: block;
+  transition: src .3s;
+}
+.pdp-badges {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 8px;
+}
+.pdp-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+  padding: 0;
+  background: var(--navy-deep);
+}
+.pdp-thumb {
+  height: 108px;
+  flex-shrink: 0;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border-color var(--t), opacity var(--t);
+  opacity: .65;
+}
+.pdp-thumb:hover { opacity: .85; }
+.pdp-thumb.active {
+  border-color: var(--gold);
+  opacity: 1;
+}
+.pdp-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Body layout */
+.pdp-body {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
+  align-items: start;
+  padding-top: 56px;
+  padding-bottom: 80px;
+}
+.pdp-main { display: flex; flex-direction: column; gap: 36px; }
+
+/* Title block */
+.pdp-title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.pdp-loc {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: 8px;
+  letter-spacing: .02em;
+}
+.pdp-title-block h1 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--navy);
+}
+.pdp-price-box {
+  background: var(--gold-pale);
+  border: 1px solid rgba(184,151,74,.2);
+  border-radius: var(--r-lg);
+  padding: 16px 24px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.pdp-price-box span {
+  display: block;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 4px;
+}
+.pdp-price-box strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: var(--navy);
+  font-weight: 700;
+}
+.pdp-price-box strong small {
+  font-family: 'DM Sans', sans-serif;
+  font-size: .75rem;
+  color: var(--gray-400);
+  font-weight: 400;
+}
+
+/* Description */
+.pdp-desc p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--text-soft);
+  border-left: 3px solid var(--gold);
+  padding-left: 20px;
+}
+
+/* Specs grid */
+.pdp-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--gray-200);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.pdp-spec {
+  background: var(--off-white);
+  padding: 18px 14px;
+  text-align: center;
+}
+.pdp-spec-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.pdp-spec-lbl {
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+/* Features */
+.pdp-section-title {
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.pdp-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Sidebar */
+.pdp-sidebar {
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pdp-cta-card {
+  background: var(--navy);
+  border-radius: var(--r-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.pdp-cta-card h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+.pdp-cta-card > p {
+  color: rgba(255,255,255,.6);
+  font-size: .875rem;
+  line-height: 1.65;
+}
+.pdp-cta-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 14px;
+  font-size: .875rem;
+}
+.pdp-cta-card .btn-outline {
+  border-color: rgba(255,255,255,.25);
+  color: rgba(255,255,255,.8);
+}
+.pdp-cta-card .btn-outline:hover {
+  background: rgba(255,255,255,.1);
+  color: var(--white);
+}
+.pdp-contact-info {
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pdp-ci {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .82rem;
+}
+.pdp-ci span { font-size: 1rem; }
+.pdp-ci a {
+  color: rgba(255,255,255,.6);
+  transition: color var(--t);
+}
+.pdp-ci a:hover { color: var(--gold-light); }
+
+.pdp-summary-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--r-lg);
+  padding: 24px;
+  box-shadow: 0 2px 16px rgba(27,42,74,.05);
+}
+.pdp-summary-card h4 {
+  color: var(--navy);
+  font-size: 1rem;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray-200);
+}
+.pdp-summary-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pdp-srow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .82rem;
+  gap: 12px;
+}
+.pdp-srow span { color: var(--gray-400); }
+.pdp-srow strong { color: var(--navy); text-align: right; }
+
+/* Nearby section */
+.pdp-nearby { padding-top: 0; }
+.pdp-nearby h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); }
+
+/* ── RESPONSIVE: PROPERTY DETAIL PAGE ── */
+@media (max-width: 1024px) {
+  .pdp-body { grid-template-columns: 1fr; gap: 40px; }
+  .pdp-sidebar { position: static; }
+  .pdp-specs-grid { grid-template-columns: repeat(2, 1fr); }
+  .pdp-hero { grid-template-columns: 1fr; max-height: none; }
+  .pdp-hero-main img { height: 380px; }
+  .pdp-thumbs { flex-direction: row; overflow-x: auto; height: 80px; }
+  .pdp-thumb { width: 120px; height: 80px; flex-shrink: 0; }
+}
+@media (max-width: 768px) {
+  .pbc-inner { padding: 12px 20px; }
+  .pdp-body { padding: 32px 20px 60px; }
+  .pdp-title-block { flex-direction: column; }
+  .pdp-price-box { text-align: left; width: 100%; }
+  .pdp-hero-main img { height: 260px; }
+  .pdp-specs-grid { grid-template-columns: repeat(2, 1fr); }
+  .pdp-cta-card { padding: 24px 20px; }
+  .pdp-summary-card { padding: 20px; }
+}
+
+/* ── PAGE ACTIVE STATE — non-SPA ── */
+/* In multi-page mode every page IS active, remove the display:none default */
+.page { display: block; }
+
+/* Re-apply animation on load */
+.page.active { animation: fadeIn .5s cubic-bezier(.4,0,.2,1); }
