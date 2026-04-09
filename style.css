@@ -3234,3 +3234,8 @@ h2 { font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 600; }
 
 /* Re-apply animation on load */
 .page.active { animation: fadeIn .5s cubic-bezier(.4,0,.2,1); }
+
+/* Hide success message by default */
+#form-success {
+    display: none;
+}

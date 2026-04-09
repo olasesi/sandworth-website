@@ -45,14 +45,14 @@ require './partials/header.php';
         <span class="eyebrow-dot"></span>
         ...Premium Estate Within Reach &nbsp;·&nbsp; anywhere in Nigeria
       </div>
-      <h1>Crafting Spaces You'll Be <br>Proud to Call <em>Home</em></h1>
+      <h1>Crafting Spaces <br>You'll Be Proud <br>to Call <em>Home</em></h1>
       <p class="hero-desc">Sandworth Properties Ltd. Leading real estate development company in Nigeria — from luxury residential estates to Grade-A commercial developments — for those who accept nothing less than the finest.</p>
       <div class="hero-btns">
-        <a class="btn-primary" href="<?= $site_url ?>/properties">
+        <a class="btn-primary" href="<?= SITE_URL ?>/all-properties">
           Explore Properties
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a class="btn-ghost" href="<?= $site_url ?>/about-us">Our Story</a>
+        <a class="btn-ghost" href="<?= SITE_URL ?>/about-us">Our Story</a>
       </div>
     </div>
   </div><!-- /.hero -->
@@ -135,21 +135,21 @@ require './partials/header.php';
     <div class="sec-tag">Featured Listings</div>
     <div class="sec-head-row">
       <h2>Exceptional Properties<br>Awaiting You</h2>
-      <a class="view-all" href="/properties">View All Listings &#8594;</a>
+      <a class="view-all" href="<?= SITE_URL ?>/all-properties">View All Listings &#8594;</a>
     </div>
     <div class="props-grid">
       <div class="prop-card reveal">
         <div class="prop-img">
           <img src="./images/arepo-slider-1-1024x598.png" alt="Sandworth Grand Residences, Arepo" loading="lazy"/>
           <div class="prop-badges"><span class="pbadge sale">For Rent</span><span class="pbadge prem">Premium</span></div>
-          <div class="prop-ov"><a href="<?= $site_url ?>/properties/arepo-gardens-estate">Quick Enquiry</a></div>
+          <div class="prop-ov"><a href="<?= SITE_URL  ?>/properties/arepo-gardens-estate">Quick Enquiry</a></div>
         </div>
         <div class="prop-body">
           <p class="prop-loc">&#128205; Sandworth Court, Arepo, Ogun State</p>
           <h4>Sandworth Grand Residences</h4>
           <p>Situated in a serene and organized environment at the boundary of Lagos and Ogun State, hosting many estates including Journalist Estate and Citi-View Estate.</p>
           <div class="prop-specs"><span>3 Beds</span><span>3 Baths</span><span>1,200 sqm</span></div>
-          <div class="prop-foot"><a href="<?= $site_url ?>/contact-us">Enquire &#8594;</a></div>
+          <div class="prop-foot"><a href="<?= SITE_URL  ?>/contact-us">Enquire &#8594;</a></div>
         </div>
       </div>
 
@@ -157,14 +157,14 @@ require './partials/header.php';
         <div class="prop-img">
           <img src="./images/Larcade13.jpg" alt="L'ARCADE Mall Owerri" loading="lazy"/>
           <div class="prop-badges"><span class="pbadge rent">For Rent</span></div>
-          <div class="prop-ov"><a href="<?= $site_url ?>/properties/arcade-mall-owerri">Quick Enquiry</a></div>
+          <div class="prop-ov"><a href="<?= SITE_URL  ?>/properties/arcade-mall-owerri">Quick Enquiry</a></div>
         </div>
         <div class="prop-body">
           <p class="prop-loc">&#128205; L'ARCADE Mall, Owerri, Imo State</p>
           <h4>An Oasis of Calm and Beauty</h4>
           <p>L'ARCADE is the state of the art shopping mall developed by Sandworth Properties and located in Owerri the Imo state capital.</p>
           <div class="prop-specs"><span>Open Shops</span><span>Office Spaces</span><span>2,500 sqm</span></div>
-          <div class="prop-foot"><a href="<?= $site_url ?>/contact-us">Enquire &#8594;</a></div>
+          <div class="prop-foot"><a href="<?= SITE_URL  ?>/contact-us">Enquire &#8594;</a></div>
         </div>
       </div>
 
@@ -172,14 +172,14 @@ require './partials/header.php';
         <div class="prop-img">
           <img src="./images/arepo_enterance.png" alt="Sandworth Homes Ajah" loading="lazy"/>
           <div class="prop-badges"><span class="pbadge sale">For Rent</span><span class="pbadge comm">For Sales</span></div>
-          <div class="prop-ov"><a href="<?= $site_url ?>/properties/sandworth-homes-ajah">Quick Enquiry</a></div>
+          <div class="prop-ov"><a href="<?= SITE_URL  ?>/properties/sandworth-homes-ajah">Quick Enquiry</a></div>
         </div>
         <div class="prop-body">
           <p class="prop-loc">&#128205; Sandworth Homes, Ajah, Lagos State</p>
           <h4>Starting from &#8358;1.8 Million Per Annum</h4>
           <p>This prestigious estate is sitting on a land mass area of approximately 6,917.709 sqm. Access through the dual carriageway of the Lekki-Epe Expressway.</p>
           <div class="prop-specs"><span>Open Plan</span><span>4 Floors</span><span>2,500 sqm</span></div>
-          <div class="prop-foot"><a href="<?= $site_url ?>/contact-us">Enquire &#8594;</a></div>
+          <div class="prop-foot"><a href="<?= SITE_URL  ?>/contact-us">Enquire &#8594;</a></div>
         </div>
       </div>
     </div>
@@ -207,7 +207,7 @@ require './partials/header.php';
           <span class="vcard-tag">Property Tour</span>
           <h4>Arepo Estate &mdash; Full Walkthrough</h4>
           <p>An exclusive interior tour of our flagship Arepo development — living areas, master suite, and landscaped grounds.</p>
-          <a class="vcard-cta" href="<?= $site_url ?>/projects">View Project &#8594;</a>
+          <a class="vcard-cta" href="<?= SITE_URL  ?>/projects">View Project &#8594;</a>
         </div>
       </div>
       <div class="vcard reveal" style="--d:.1s">
@@ -224,14 +224,14 @@ require './partials/header.php';
           <span class="vcard-tag">Development Update</span>
           <h4>Sandworth Lekki Phase &mdash; Site Tour</h4>
           <p>A ground-level progress update on our newest Lekki development — from foundation to finishing touches.</p>
-          <a class="vcard-cta" href="<?= $site_url ?>/projects">View Project &#8594;</a>
+          <a class="vcard-cta" href="<?= SITE_URL  ?>/projects">View Project &#8594;</a>
         </div>
       </div>
       <div class="vcard reveal" style="--d:.2s">
         <div class="vcard-thumb">
           <img src="./images/Arepo-IV2-1024x576.jpg" alt="Why clients choose Sandworth" loading="lazy"/>
           <div class="vcard-overlay">
-            <button class="vplay-btn" onclick="openVideo(this)" data-src="https://www.youtube.com/embed/VIDEO_ID_3?autoplay=1&rel=0" aria-label="Play client testimonial video">
+            <button class="vplay-btn" onclick="openVideo(this)" data-src="https://www.youtube.com/watch?v=zEknZT7eamU&t=3s" aria-label="Play client testimonial video">
               <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5"/><path d="M10 8.5l6 3.5-6 3.5V8.5z" fill="currentColor"/></svg>
             </button>
           </div>
@@ -241,7 +241,7 @@ require './partials/header.php';
           <span class="vcard-tag">Client Testimonial</span>
           <h4>Why Our Clients Choose Sandworth</h4>
           <p>Hear directly from homeowners and investors about their experience partnering with Sandworth Properties.</p>
-          <a class="vcard-cta" href="<?= $site_url ?>/projects">View Project &#8594;</a>
+          <a class="vcard-cta" href="<?= SITE_URL  ?>/projects">View Project &#8594;</a>
         </div>
       </div>
     </div>
@@ -266,7 +266,7 @@ require './partials/header.php';
         <h2>Ready to Find Your Perfect Space?</h2>
         <p>Our advisors are available to guide you every step of the way.</p>
       </div>
-      <a class="btn-white" href="<?= $site_url ?>/contact-us">
+      <a class="btn-white" href="<?= SITE_URL  ?>/contact-us">
         Get in Touch Today
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>

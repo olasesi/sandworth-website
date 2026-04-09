@@ -1,26 +1,41 @@
+# 1. Basic Environment Settings
 Options -Indexes
+DirectoryIndex index.php
 RewriteEngine On
 
-# ── Force HTTPS (uncomment on live server) ──
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+# If your project is in a subfolder like 'sandworth', uncomment the next line:
+# RewriteBase /sandworth/
 
-# ── Remove .php extension ──
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
-# ── Redirect old SPA anchors → real pages ──
-RewriteRule ^about/?$       /about-us   [R=301,L]
-RewriteRule ^team/?$        /our-team   [R=301,L]
-RewriteRule ^contact/?$     /contact-us [R=301,L]
-
-# ── Pretty /properties/slug → properties/slug.php ──
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^properties/([a-z0-9\-]+)/?$ properties/$1.php [NC,L]
-
-# ── Security headers ──
+# 2. Security Headers
 Header always set X-Content-Type-Options "nosniff"
 Header always set X-Frame-Options "SAMEORIGIN"
 Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# 3. Force removal of .php from address bar (External Redirect)
+# This cleans the URL if someone manually types .php
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
+
+# 4. Handle index.php in the address bar
+# Redirects example.com/index to example.com/
+RewriteRule ^index$ / [R=301,L]
+
+# 5. Redirect old SPA anchors → real pages
+RewriteRule ^about/?$    /about-us   [R=301,L]
+RewriteRule ^team/?$     /our-team   [R=301,L]
+RewriteRule ^contact/?$  /contact-us [R=301,L]
+
+# 6. FIX: Properties Folder Conflict
+# This rule allows 'properties' to load properties.php even if the folder exists.
+# It also handles the slugs like 'properties/my-house'
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^properties/([a-z0-9\-]+)/?$ properties/$1.php [NC,L]
+
+# This rule specifically handles the main "properties" page
+RewriteRule ^properties/?$ properties.php [NC,L]
+
+# 7. General Rule: Remove .php extension internally
+# This catches everything else (like /services or /gallery)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

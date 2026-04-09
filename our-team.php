@@ -29,7 +29,7 @@ require './partials/header.php';
           <img src="./images/CE2.png" alt="Chukwuemeka Sandworth — Founder & CEO"/>
           <div class="thover">
             
-            <a href="<?= $site_url ?>/contact-us">Email</a>
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
@@ -39,42 +39,12 @@ require './partials/header.php';
         </div>
       </div>
 
-      <div class="tcard reveal" style="--d:.08s">
-        <div class="tphoto">
-          <img src="./images/Opeyemi-Akinluyi.jpg" alt="Opeyemi Akinluyi — Managing Director"/>
-          <div class="thover">
-            
-            <a href="<?= $site_url ?>/contact-us">Email</a>
-          </div>
-        </div>
-        <div class="tcard-body">
-          <h4>Opeyemi Akinluyi</h4>
-          <span class="trole">Managing Director</span>
-          <p>A seasoned real estate executive with 15+ years leading large-scale residential and commercial projects across Lagos, Abuja, and Port Harcourt.</p>
-        </div>
-      </div>
-
-      <div class="tcard reveal" style="--d:.16s">
-        <div class="tphoto">
-          <img src="./images/Afolabi.png" alt="Afolabi Adeyemi — Director Commercial Properties"/>
-          <div class="thover">
-            
-            <a href="<?= $site_url ?>/contact-us">Email</a>
-          </div>
-        </div>
-        <div class="tcard-body">
-          <h4>Afolabi Adeyemi</h4>
-          <span class="trole">Director, Commercial Properties</span>
-          <p>A chartered surveyor and valuer with expertise in commercial real estate advisory, lease structuring, and corporate accommodation solutions for multinationals.</p>
-        </div>
-      </div>
-
-      <div class="tcard reveal" style="--d:.24s">
+       <div class="tcard reveal" style="--d:.24s">
         <div class="tphoto">
           <img src="./images/Safiya1-1.png" alt="Safiya Nwosu — Head Property Management"/>
           <div class="thover">
             
-            <a href="<?= $site_url ?>/contact-us">Email</a>
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
@@ -84,12 +54,42 @@ require './partials/header.php';
         </div>
       </div>
 
-      <div class="tcard reveal" style="--d:.32s">
+      <div class="tcard reveal" style="--d:0s">
+        <div class="tphoto">
+          <img src="./images/Evarist-Uwam-3.jpg" alt="Evarist Uwam — Senior Property Consultant"/>
+          <div class="thover">
+            
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <h4>Evarist Uwam</h4>
+          <span class="trole">Senior Property Consultant</span>
+          <p>Dedicated consultant specialising in high-value residential transactions across Ikoyi, Lekki, and Victoria Island.</p>
+        </div>
+      </div>
+
+      <div class="tcard reveal" style="--d:.16s">
+        <div class="tphoto">
+          <img src="./images/Afolabi.png" alt="Afolabi Adeyemi — Director Commercial Properties"/>
+          <div class="thover">
+            
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <h4>Afolabi Adeyemi</h4>
+          <span class="trole">Director, Commercial Properties</span>
+          <p>A chartered surveyor and valuer with expertise in commercial real estate advisory, lease structuring, and corporate accommodation solutions for multinationals.</p>
+        </div>
+      </div>
+
+ <div class="tcard reveal" style="--d:.32s">
         <div class="tphoto">
           <img src="./images/Anthony-Okeleke.jpeg" alt="Anthony Okeleke — Chief Financial Officer"/>
           <div class="thover">
             
-            <a href="<?= $site_url ?>/contact-us">Email</a>
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
@@ -99,12 +99,46 @@ require './partials/header.php';
         </div>
       </div>
 
+       <div class="tcard reveal" style="--d:.32s">
+        <div class="tphoto">
+          <img src="./images/Anthony-Okeleke.jpeg" alt="Anthony Okeleke — Chief Financial Officer"/>
+          <div class="thover">
+            
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <h4>Anthony Okeleke</h4>
+          <span class="trole">Chief Financial Officer</span>
+          <p>CFA charterholder and former investment banker. Anthony leads Sandworth's financial strategy, investment structuring, and portfolio performance reporting.</p>
+        </div>
+      </div>
+
+      <div class="tcard reveal" style="--d:.08s">
+        <div class="tphoto">
+          <img src="./images/Opeyemi-Akinluyi.jpg" alt="Opeyemi Akinluyi — Managing Director"/>
+          <div class="thover">
+            
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <h4>Opeyemi Akinluyi</h4>
+          <span class="trole">Managing Director</span>
+          <p>A seasoned real estate executive with 15+ years leading large-scale residential and commercial projects across Lagos, Abuja, and Port Harcourt.</p>
+        </div>
+      </div>
+
+      
+
+     
+
       <div class="tcard reveal" style="--d:.4s">
         <div class="tphoto">
           <img src="./images/Joan-Usman.png" alt="Joan Usman — Legal Counsel"/>
           <div class="thover">
             
-            <a href="<?= $site_url ?>/contact-us">Email</a>
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
@@ -117,14 +151,14 @@ require './partials/header.php';
   </div>
 
   <div class="section" style="padding-top:0">
-    <div class="sec-tag">Associates</div>
+    <!-- <div class="sec-tag">Associates</div> -->
     <div class="team-grid">
       <div class="tcard reveal" style="--d:0s">
         <div class="tphoto">
           <img src="./images/Evarist-Uwam-3.jpg" alt="Evarist Uwam — Senior Property Consultant"/>
           <div class="thover">
             
-            <a href="<?= $site_url ?>/contact-us">Email</a>
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
@@ -139,7 +173,7 @@ require './partials/header.php';
           <div class="tinit">IM</div>
           <div class="thover">
             
-            <a href="<?= $site_url ?>/contact-us">Email</a>
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
@@ -154,7 +188,7 @@ require './partials/header.php';
           <div class="tinit">TB</div>
           <div class="thover">
             
-            <a href="<?= $site_url ?>/contact-us">Email</a>
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
@@ -172,7 +206,7 @@ require './partials/header.php';
         <h2>Join Our Growing Team</h2>
         <p>We're always looking for talented, driven professionals who share our passion for exceptional real estate service.</p>
       </div>
-      <a class="btn-primary" href="<?= $site_url ?>/contact-us">
+      <a class="btn-primary" href="<?= SITE_URL ?>/contact-us">
         Send Your CV
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>

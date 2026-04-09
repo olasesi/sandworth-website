@@ -36,7 +36,7 @@ $schema = [
     'name'        => $p['title'],
     'description' => strip_tags($p['desc']),
     'url'         => $canonical,
-    'image'       => array_map(fn($img) => $site_url . $img, $p['images']),
+    'image'       => array_map(fn($img) => SITE_URL . $img, $p['images']),
     'address'     => [
         '@type'           => 'PostalAddress',
         'addressLocality' => $p['location'],
@@ -53,9 +53,9 @@ $schema = [
   <!-- BREADCRUMB -->
   <nav class="prop-breadcrumb" aria-label="Breadcrumb">
     <div class="pbc-inner">
-      <a href="<?= $site_url ?>/">Home</a>
+      <a href="<?= SITE_URL ?>/">Home</a>
       <span class="pbc-sep">&#8250;</span>
-      <a href="<?= $site_url ?>/properties">Properties</a>
+      <a href="<?= SITE_URL ?>/all-properties">Properties</a>
       <span class="pbc-sep">&#8250;</span>
       <span aria-current="page"><?= htmlspecialchars($p['title']) ?></span>
     </div>
@@ -135,11 +135,11 @@ $schema = [
       <div class="pdp-cta-card">
         <h3>Interested in this Property?</h3>
         <p>Our advisors are available to arrange a private viewing or answer any questions.</p>
-        <a class="btn-primary pdp-cta-btn" href="<?= $site_url ?>/contact-us?property=<?= urlencode($p['title']) ?>">
+        <a class="btn-primary pdp-cta-btn" href="<?= SITE_URL ?>/contact-us?property=<?= urlencode($p['title']) ?>">
           Book a Viewing
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a class="btn-outline pdp-cta-btn" href="<?= $site_url ?>/contact-us?property=<?= urlencode($p['title']) ?>&enquiry=general">
+        <a class="btn-outline pdp-cta-btn" href="<?= SITE_URL ?>/contact-us?property=<?= urlencode($p['title']) ?>&enquiry=general">
           Send Enquiry
         </a>
         <div class="pdp-contact-info">
@@ -177,13 +177,13 @@ $schema = [
         <div class="prop-img">
           <img src="<?= htmlspecialchars($np['img']) ?>" alt="<?= htmlspecialchars($np['title']) ?>" loading="lazy"/>
           <div class="prop-badges"><span class="pbadge sale"><?= htmlspecialchars($np['type']) ?></span></div>
-          <div class="prop-ov"><a href="/properties/<?= htmlspecialchars($np['slug']) ?>">View Property</a></div>
+          <div class="prop-ov"><a href="<?= SITE_URL ?>/properties/<?= htmlspecialchars($np['slug']) ?>">View Property</a></div>
         </div>
         <div class="prop-body">
           <p class="prop-loc">&#128205; <?= htmlspecialchars($np['location']) ?></p>
           <h4><?= htmlspecialchars($np['title']) ?></h4>
           <div class="prop-foot">
-            <a href="/properties/<?= htmlspecialchars($np['slug']) ?>">View Details &#8594;</a>
+            <a href="<?= SITE_URL ?>/properties/<?= htmlspecialchars($np['slug']) ?>">View Details &#8594;</a>
           </div>
         </div>
       </div>
@@ -199,7 +199,7 @@ $schema = [
         <h2>Ready to Make Your Move?</h2>
         <p>Speak with a Sandworth advisor and take the next step towards your perfect property.</p>
       </div>
-      <a class="btn-white" href="<?= $site_url ?>/contact-us">
+      <a class="btn-white" href="<?= SITE_URL ?>/contact-us">
         Schedule a Consultation
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>

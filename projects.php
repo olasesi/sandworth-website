@@ -53,7 +53,7 @@ require 'partials/header.php';
             <div class="ps-item"><div class="ps-val">&#8358;4.2B</div><div class="ps-lbl">GDV</div></div>
             <div class="ps-item"><div class="ps-val">Q4 2025</div><div class="ps-lbl">Delivery</div></div>
           </div>
-          <a class="btn-outline proj-btn" href="<?= $site_url ?>/contact-us">Enquire About This Project</a>
+          <a class="btn-outline proj-btn" href="<?= SITE_URL ?>/contact-us">Enquire About This Project</a>
         </div>
       </div>
 
@@ -81,7 +81,7 @@ require 'partials/header.php';
             <div class="ps-item"><div class="ps-val">&#8358;7.8B</div><div class="ps-lbl">GDV</div></div>
             <div class="ps-item"><div class="ps-val">Q2 2026</div><div class="ps-lbl">Delivery</div></div>
           </div>
-          <a class="btn-outline proj-btn" href="<?= $site_url ?>/contact-us">Enquire About This Project</a>
+          <a class="btn-outline proj-btn" href="<?= SITE_URL ?>/contact-us">Enquire About This Project</a>
         </div>
       </div>
 
@@ -109,7 +109,7 @@ require 'partials/header.php';
             <div class="ps-item"><div class="ps-val">&#8358;5.6B</div><div class="ps-lbl">GDV</div></div>
             <div class="ps-item"><div class="ps-val">Q1 2026</div><div class="ps-lbl">Delivery</div></div>
           </div>
-          <a class="btn-outline proj-btn" href="<?= $site_url ?>/contact-us">Enquire About This Project</a>
+          <a class="btn-outline proj-btn" href="<?= SITE_URL ?>/contact-us">Enquire About This Project</a>
         </div>
       </div>
 
@@ -137,7 +137,7 @@ require 'partials/header.php';
             <div class="ps-item"><div class="ps-val">100%</div><div class="ps-lbl">Sold</div></div>
             <div class="ps-item"><div class="ps-val">2022</div><div class="ps-lbl">Delivered</div></div>
           </div>
-          <a class="btn-outline proj-btn" href="<?= $site_url ?>/contact-us">Enquire About This Project</a>
+          <a class="btn-outline proj-btn" href="<?= SITE_URL ?>/contact-us">Enquire About This Project</a>
         </div>
       </div>
 
@@ -165,7 +165,7 @@ require 'partials/header.php';
             <div class="ps-item"><div class="ps-val">100%</div><div class="ps-lbl">Let</div></div>
             <div class="ps-item"><div class="ps-val">2021</div><div class="ps-lbl">Delivered</div></div>
           </div>
-          <a class="btn-outline proj-btn" href="<?= $site_url ?>/contact-us">Enquire About This Project</a>
+          <a class="btn-outline proj-btn" href="<?= SITE_URL ?>/contact-us">Enquire About This Project</a>
         </div>
       </div>
 
@@ -193,7 +193,7 @@ require 'partials/header.php';
             <div class="ps-item"><div class="ps-val">&#8358;12B</div><div class="ps-lbl">GDV</div></div>
             <div class="ps-item"><div class="ps-val">Q3 2027</div><div class="ps-lbl">Delivery</div></div>
           </div>
-          <a class="btn-outline proj-btn" href="<?= $site_url ?>/contact-us">Enquire About This Project</a>
+          <a class="btn-outline proj-btn" href="<?= SITE_URL ?>/contact-us">Enquire About This Project</a>
         </div>
       </div>
 
@@ -210,7 +210,7 @@ require 'partials/header.php';
         <h2>Interested in Investing?</h2>
         <p>Speak with our development team about off-plan opportunities and investment structures.</p>
       </div>
-      <a class="btn-white" href="<?= $site_url ?>/contact-us">
+      <a class="btn-white" href="<?= SITE_URL ?>/contact-us">
         Speak to an Advisor
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>

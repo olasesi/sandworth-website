@@ -1,4 +1,27 @@
 <?php
+declare(strict_types=1);
+
+
+$page_title   = "Contact Us — Schedule a Tour or Send an Enquiry";
+$meta_desc    = 'Get in touch with Sandworth Properties Ltd. Our advisors respond within 24 hours for property viewings, enquiries, and investment consultations.';
+$current_page = 'contact-us';
+$og_image     = './images/arepo-slider-1024x598.png';
+
+// Pre-fill support: ?enquiry=Buy+a+Property or ?property=Arepo+Gardens
+$prefill_enquiry  = htmlspecialchars($_GET['enquiry']  ?? '', ENT_QUOTES, 'UTF-8');
+$prefill_property = htmlspecialchars($_GET['property'] ?? '', ENT_QUOTES, 'UTF-8');
+
+// Build a prefilled message if a property was passed
+$prefill_message = '';
+if ($prefill_property) {
+    $prefill_message = "I am interested in " . htmlspecialchars($_GET['property'], ENT_QUOTES, 'UTF-8') . " and would like to book a viewing.";
+}
+
+$allowed_enquiry_types = [
+    'Buy a Property', 'Rent a Property', 'Property Management',
+    'Land Acquisition', 'Investment Advisory', 'Facility Management', 'Other',
+];
+
 /**
  * Sandworth Properties Ltd.
  * Contact Form Handler — PHP 8+ / PDO / OOP
@@ -18,8 +41,6 @@
  *   PRIMARY KEY (`id`)
  * ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
  */
-
-declare(strict_types=1);
 
 // ─── Configuration ────────────────────────────────────────────────────────────
 // Edit these to match your phpMyAdmin / cPanel database settings
@@ -135,7 +156,7 @@ class FormValidator
             $this->errors['email'] = 'Please enter a valid email address.';
         }
 
-        if (!empty($data['phone']) && !preg_match('/^[\+0-9\s\-\(\)]{7,20}$/', $data['phone'])) {
+        if (!empty($data['phone']) && !preg_match('/^(\+234|0)[789][01]\d{8}$/', $data['phone'])) {
             $this->errors['phone'] = 'Please enter a valid phone number.';
         }
 
@@ -208,7 +229,6 @@ class ContactHandler
     public function handle(): void
     {
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-            $this->respond(false, 'Invalid request method.');
             return;
         }
 
@@ -273,37 +293,23 @@ class ContactHandler
             // Non-JS fallback: redirect back with query-string status
             $status = $success ? 'success' : 'error';
             $msg    = urlencode($message);
-            header("Location: index.html?status={$status}&msg={$msg}#contact");
+            header("Location: contact-us?status={$status}&msg={$msg}#contact");
         }
         exit;
     }
 }
 
 // ─── Run ──────────────────────────────────────────────────────────────────────
-(new ContactHandler())->handle();
+$handler = new ContactHandler();
 
-
-$page_title   = "Contact Us — Schedule a Tour or Send an Enquiry";
-$meta_desc    = 'Get in touch with Sandworth Properties Ltd. Our advisors respond within 24 hours for property viewings, enquiries, and investment consultations.';
-$current_page = 'contact-us';
-$og_image     = '/images/arepo-slider-1024x598.png';
-
-// Pre-fill support: ?enquiry=Buy+a+Property or ?property=Arepo+Gardens
-$prefill_enquiry  = htmlspecialchars($_GET['enquiry']  ?? '', ENT_QUOTES, 'UTF-8');
-$prefill_property = htmlspecialchars($_GET['property'] ?? '', ENT_QUOTES, 'UTF-8');
-
-// Build a prefilled message if a property was passed
-$prefill_message = '';
-if ($prefill_property) {
-    $prefill_message = "I am interested in " . htmlspecialchars($_GET['property'], ENT_QUOTES, 'UTF-8') . " and would like to book a viewing.";
+// Only trigger the handler logic if the user has clicked "Submit"
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+ 
+    $handler->handle();
 }
 
-$allowed_enquiry_types = [
-    'Buy a Property', 'Rent a Property', 'Property Management',
-    'Land Acquisition', 'Investment Advisory', 'Facility Management', 'Other',
-];
+require './partials/header.php';
 
-require 'partials/header.php';
 ?>
 
 <section class="page active" id="page-contact">
@@ -366,7 +372,7 @@ require 'partials/header.php';
 
       <!-- Contact form -->
       <div class="contact-form-wrap reveal">
-        <form class="cform" id="contact-form" action="/contact.php" method="POST" onsubmit="handleForm(event)" novalidate>
+        <form class="cform" id="contact-form" action="" method="POST" onsubmit="handleForm(event)" novalidate>
           <div class="cform-head">
             <h3>Send an Enquiry</h3>
             <p>Fill in the form and we'll be in touch within 24 hours.</p>
@@ -435,7 +441,7 @@ require 'partials/header.php';
           <div class="fs-icon">&#10003;</div>
           <h3>Message Received!</h3>
           <p>Thank you for reaching out to Sandworth Properties. One of our advisors will contact you within 24 hours.</p>
-          <a class="btn-outline" href="/contact-us">Send Another Enquiry</a>
+          <a class="btn-outline" href="contact-us">Send Another Enquiry</a>
         </div>
       </div>
 

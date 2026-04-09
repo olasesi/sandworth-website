@@ -23,7 +23,7 @@ require 'partials/header.php';
       <h2>From Boutique Firm to Nigeria's Most Trusted Name in Real Estate</h2>
       <p>Founded in 2006, Sandworth Properties Ltd. began as a boutique Lagos real estate firm with a bold ambition: to professionalise estate management in West Africa. Guided by an unwavering commitment to integrity, we grew from a small advisory practice into one of Nigeria's most respected property management companies.</p>
       <p>Today, we manage a portfolio valued at over <strong>&#8358;8 billion</strong>, serving discerning individuals, families, corporations, and institutional investors who trust us with their most valuable assets.</p>
-      <a class="btn-primary" href="<?= $site_url ?>/contact-us">
+      <a class="btn-primary" href="<?= SITE_URL ?>/contact-us">
         Work With Us
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -84,7 +84,7 @@ require 'partials/header.php';
         <h2>Ready to Work with Us?</h2>
         <p>Get in touch and let's discuss how Sandworth can serve your property needs.</p>
       </div>
-      <a class="btn-white" href="<?= $site_url ?>/contact-us">
+      <a class="btn-white" href="<?= SITE_URL ?>/contact-us">
         Contact Our Team
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
