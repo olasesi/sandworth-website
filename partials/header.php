@@ -92,7 +92,7 @@ function nav_class(string $page, string $current): string {
     <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
       <a class="<?= nav_class('home', $current_page) ?>"       href="<?= SITE_URL ?>/">Home</a>
       <a class="<?= nav_class('about-us', $current_page) ?>"   href="<?= SITE_URL ?>/about-us">About Us</a>
-      <a class="<?= nav_class('projects', $current_page) ?>"   href="<?= SITE_URL ?>/projects">Projects</a>
+      
 
       <!-- Properties Dropdown -->
       <div class="nav-dropdown" id="navDropdown">
@@ -117,34 +117,35 @@ function nav_class(string $page, string $current): string {
               <span>Ajah, Lagos State</span>
             </span>
           </a>
-          <a class="drop-item" href="<?= SITE_URL ?>/properties/sandworth-court" role="menuitem">
+           <a class="drop-item" href="<?= SITE_URL ?>/properties/sandworth-court-arepo" role="menuitem">
             <span class="drop-text">
               <strong>Sandworth Court</strong>
-              <span>Victoria Island, Lagos</span>
-            </span>
-          </a>
-          <a class="drop-item" href="<?= SITE_URL ?>/properties/arepo-gardens-estate" role="menuitem">
-            <span class="drop-text">
-              <strong>Arepo Gardens Estate</strong>
               <span>Arepo, Ogun State</span>
             </span>
           </a>
-          <a class="drop-item" href="<?= SITE_URL ?>/properties/banana-island-villas" role="menuitem">
+          <a class="drop-item" href="<?= SITE_URL ?>/properties/sandworth-estate-abuja" role="menuitem">
             <span class="drop-text">
-              <strong>Banana Island Villas</strong>
-              <span>Banana Island, Ikoyi · Lagos</span>
+              <strong>Sandworth Estate</strong>
+              <span>Karu, Abuja</span>
             </span>
           </a>
-          <a class="drop-item" href="<?= SITE_URL ?>/properties/sandworth-lekki-towers" role="menuitem">
+         
+          <a class="drop-item" href="<?= SITE_URL ?>/properties/sandworth-gardens-owerri" role="menuitem">
             <span class="drop-text">
-              <strong>Sandworth Lekki Towers</strong>
-              <span>Lekki Phase 1, Lagos</span>
+              <strong>Sandworth Gardens</strong>
+              <span>Owerri · Imo State</span>
+            </span>
+          </a>
+          <a class="drop-item" href="<?= SITE_URL ?>/properties/sandworth-resort-ibeju-lekki" role="menuitem">
+            <span class="drop-text">
+              <strong>Sandworth Resort Ibeju-Lekki</strong>
+              <span>Ibeju-Lekki, Lagos</span>
             </span>
           </a>
           <a class="drop-footer" href="<?= SITE_URL ?>/all-properties">View All Properties &nbsp;&#8594;</a>
         </div>
       </div>
-
+<a class="<?= nav_class('projects', $current_page) ?>"   href="<?= SITE_URL ?>/projects">Projects</a>
       <a class="<?= nav_class('our-team', $current_page) ?>"   href="<?= SITE_URL ?>/our-team">Our Team</a>
       <a class="<?= nav_class('contact-us', $current_page) ?>" href="<?= SITE_URL ?>/contact-us">Contact</a>
     </nav>

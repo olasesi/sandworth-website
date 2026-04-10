@@ -26,37 +26,37 @@ require './partials/header.php';
     <div class="team-grid">
       <div class="tcard reveal" style="--d:0s">
         <div class="tphoto">
-          <img src="./images/CE2.png" alt="Chukwuemeka Sandworth — Founder & CEO"/>
+          <img src="./images/CE2.png" alt="Whoba Ogo — Founder & CEO"/>
           <div class="thover">
             
             <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
-          <h4>Chukwuemeka Sandworth</h4>
+          <h4>Whoba Ogo</h4>
           <span class="trole">Founder &amp; Chief Executive Officer</span>
-          <p>With 22 years in Nigerian real estate, Emeka founded Sandworth Properties with a vision to professionalise estate management in West Africa. Harvard Business School alumnus and NIESV Fellow.</p>
+          <p>Whoba Ogo is the Chief Executive of Sandworth Properties Limited. He represents a unique blend of executive acumen as a global team builder and a business development magnate. He has been credited with a strong ROI rating in business areas such as infrastructure development and operational management within Nigeria.</p>
         </div>
       </div>
 
        <div class="tcard reveal" style="--d:.24s">
         <div class="tphoto">
-          <img src="./images/Safiya1-1.png" alt="Safiya Nwosu — Head Property Management"/>
+          <img src="./images/Safiya1-1.png" alt="Safiya Whoba — Executive Director"/>
           <div class="thover">
             
             <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
-          <h4>Safiya Nwosu</h4>
-          <span class="trole">Head, Property Management</span>
-          <p>Safiya oversees Sandworth's entire residential portfolio, ensuring seamless tenant relations, facility maintenance, and complete owner satisfaction.</p>
+          <h4>Safiya Whoba</h4>
+          <span class="trole">Executive Director</span>
+          <p>Mrs. Safiya  Whoba  holds a BSc degree in Business Administration from the University of Lagos (2000). She has over 12 years dynamic experience in banking with Fidelity Bank Plc. As a Banker in Fidelity Bank Plc, her proven expertise span through Treasury Operations, Domestic Accounts, Branch Coordination and Head of Transaction Services where she monitors financial transactions, oversees the efficient day to day processes of the bank, supervised bank staff, and Preserve a professional environment.</p>
         </div>
       </div>
 
       <div class="tcard reveal" style="--d:0s">
         <div class="tphoto">
-          <img src="./images/Evarist-Uwam-3.jpg" alt="Evarist Uwam — Senior Property Consultant"/>
+          <img src="./images/Evarist-Uwam-3.jpg" alt="Evarist Uwam — Group General Manager"/>
           <div class="thover">
             
             <a href="<?= SITE_URL ?>/contact-us">Email</a>
@@ -64,14 +64,29 @@ require './partials/header.php';
         </div>
         <div class="tcard-body">
           <h4>Evarist Uwam</h4>
-          <span class="trole">Senior Property Consultant</span>
-          <p>Dedicated consultant specialising in high-value residential transactions across Ikoyi, Lekki, and Victoria Island.</p>
+          <span class="trole">Group General Manager</span>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="tcard reveal" style="--d:0s">
+        <div class="tphoto">
+          <img src="./images/AGM.jpeg" alt="Anthony Okeleke — Assistant General Manager"/>
+          <div class="thover">
+            
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <h4>Anthony Okeleke</h4>
+          <span class="trole">Assistant General Manager</span>
+          <p></p>
         </div>
       </div>
 
       <div class="tcard reveal" style="--d:.16s">
         <div class="tphoto">
-          <img src="./images/Afolabi.png" alt="Afolabi Adeyemi — Director Commercial Properties"/>
+          <img src="./images/Afolabi.png" alt="Afolabi Adeyemi — Financial Controller"/>
           <div class="thover">
             
             <a href="<?= SITE_URL ?>/contact-us">Email</a>
@@ -79,40 +94,28 @@ require './partials/header.php';
         </div>
         <div class="tcard-body">
           <h4>Afolabi Adeyemi</h4>
-          <span class="trole">Director, Commercial Properties</span>
-          <p>A chartered surveyor and valuer with expertise in commercial real estate advisory, lease structuring, and corporate accommodation solutions for multinationals.</p>
+          <span class="trole">Financial Controller</span>
+          <p>He Joined PKF Professional Service in the year 2006 and  Eight (8) years’ experience in Audit and Assurance Unit of PKF Professional Service, a top 10 Global network of legally independent member firms providing local/foreign expertise in accounting, tax and business.</p>
         </div>
       </div>
 
  <div class="tcard reveal" style="--d:.32s">
         <div class="tphoto">
-          <img src="./images/Anthony-Okeleke.jpeg" alt="Anthony Okeleke — Chief Financial Officer"/>
+          <!-- <img src="./images/Anthony-Okeleke.jpeg" alt="Ogbonnaya Okereke — head, accounting"/> -->
+          <div class="tinit">IM</div>
           <div class="thover">
             
             <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
-          <h4>Anthony Okeleke</h4>
-          <span class="trole">Chief Financial Officer</span>
-          <p>CFA charterholder and former investment banker. Anthony leads Sandworth's financial strategy, investment structuring, and portfolio performance reporting.</p>
+          <h4>Ogbonnaya Okereke</h4>
+          <span class="trole">head, accounting</span>
+          <!-- <p>CFA charterholder and former investment banker. Anthony leads Sandworth's financial strategy, investment structuring, and portfolio performance reporting.</p> -->
         </div>
       </div>
 
-       <div class="tcard reveal" style="--d:.32s">
-        <div class="tphoto">
-          <img src="./images/Anthony-Okeleke.jpeg" alt="Anthony Okeleke — Chief Financial Officer"/>
-          <div class="thover">
-            
-            <a href="<?= SITE_URL ?>/contact-us">Email</a>
-          </div>
-        </div>
-        <div class="tcard-body">
-          <h4>Anthony Okeleke</h4>
-          <span class="trole">Chief Financial Officer</span>
-          <p>CFA charterholder and former investment banker. Anthony leads Sandworth's financial strategy, investment structuring, and portfolio performance reporting.</p>
-        </div>
-      </div>
+      
 
       <div class="tcard reveal" style="--d:.08s">
         <div class="tphoto">
@@ -147,54 +150,73 @@ require './partials/header.php';
           <p>12 years of Nigerian property law expertise ensuring all Sandworth transactions are legally sound, titles are verified, and clients are fully protected.</p>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="section" style="padding-top:0">
-    <!-- <div class="sec-tag">Associates</div> -->
-    <div class="team-grid">
-      <div class="tcard reveal" style="--d:0s">
+
+ <!-- <div class="tcard reveal" style="--d:.32s">
         <div class="tphoto">
-          <img src="./images/Evarist-Uwam-3.jpg" alt="Evarist Uwam — Senior Property Consultant"/>
+          <img src="./images/Anthony-Okeleke.jpeg" alt="Anthony Okeleke — Chief Financial Officer"/>
           <div class="thover">
             
             <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
-          <h4>Evarist Uwam</h4>
-          <span class="trole">Senior Property Consultant</span>
-          <p>Dedicated consultant specialising in high-value residential transactions across Ikoyi, Lekki, and Victoria Island.</p>
+          <h4>Anthony Okeleke</h4>
+          <span class="trole">Chief Financial Officer</span>
+          <p></p>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="sec-tag">Supervisors</div> 
+    <div class="team-grid">
+      <div class="tcard reveal" style="--d:0s">
+        <div class="tphoto">
+          <img src="./images/Sadiq-Remilekun.png" alt="Sadiq Remilekun — Head, admin"/>
+          <div class="thover">
+            
+            <a href="<?= SITE_URL ?>/contact-us">Email</a>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <h4>Sadiq Remilekun</h4>
+          <span class="trole">Head, admin</span>
+          <p>B.Sc Accounting</p>
         </div>
       </div>
 
       <div class="tcard reveal" style="--d:.08s">
         <div class="tphoto tp-navy">
-          <div class="tinit">IM</div>
+          
+           <img src="./images/Lanre-Apalowo.png" alt="Lanre-Apalowo — Inspection"/>
           <div class="thover">
             
             <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
-          <h4>Ifeanyi Madu</h4>
-          <span class="trole">Head, Facility Management</span>
-          <p>Oversees all facility and estate management contracts, maintaining Sandworth's high standards of maintenance and client care across all managed estates.</p>
+          <h4>Lanre Apalowo</h4>
+          <span class="trole">Inspection</span>
+          <p>B.Sc Banking & Finance</p>
         </div>
       </div>
 
       <div class="tcard reveal" style="--d:.16s">
         <div class="tphoto tp-gold">
-          <div class="tinit">TB</div>
+          
+           <img src="./images/Emmanuel-Ngana.png" alt="Emmanuel-Ngana — Leasing Supervisor"/>
           <div class="thover">
             
             <a href="<?= SITE_URL ?>/contact-us">Email</a>
           </div>
         </div>
         <div class="tcard-body">
-          <h4>Tolu Badmus</h4>
-          <span class="trole">Marketing &amp; Client Relations</span>
-          <p>Drives Sandworth's brand presence and ensures every client touchpoint reflects our commitment to excellence and personalised service.</p>
+          <h4>Emmanuel Ngana</h4>
+          <span class="trole">Leasing Supervisor</span>
+          <p>B.Eng Electrical Electronics</p>
         </div>
       </div>
     </div>

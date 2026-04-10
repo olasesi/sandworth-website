@@ -142,7 +142,7 @@ require './partials/header.php';
         <div class="prop-img">
           <img src="./images/arepo-slider-1-1024x598.png" alt="Sandworth Grand Residences, Arepo" loading="lazy"/>
           <div class="prop-badges"><span class="pbadge sale">For Rent</span><span class="pbadge prem">Premium</span></div>
-          <div class="prop-ov"><a href="<?= SITE_URL  ?>/properties/arepo-gardens-estate">Quick Enquiry</a></div>
+          <div class="prop-ov"><a href="<?= SITE_URL  ?>/properties/sandworth-court-arepo">Quick Enquiry</a></div>
         </div>
         <div class="prop-body">
           <p class="prop-loc">&#128205; Sandworth Court, Arepo, Ogun State</p>
@@ -197,7 +197,8 @@ require './partials/header.php';
         <div class="vcard-thumb">
           <img src="./images/AREPO-LIVNG-AREA-1024x768.jpg" alt="Arepo Estate Walkthrough" loading="lazy"/>
           <div class="vcard-overlay">
-            <button class="vplay-btn" onclick="openVideo(this)" data-src="https://www.youtube.com/embed/VIDEO_ID_1?autoplay=1&rel=0" aria-label="Play Arepo Estate walkthrough video">
+            <button class="vplay-btn" onclick="openVideo(this)"
+            data-src="https://www.youtube.com/embed/zEknZT7eamU?autoplay=1&rel=0&start=1"  aria-label="Play Arepo Estate walkthrough video">
               <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5"/><path d="M10 8.5l6 3.5-6 3.5V8.5z" fill="currentColor"/></svg>
             </button>
           </div>
@@ -214,14 +215,14 @@ require './partials/header.php';
         <div class="vcard-thumb">
           <img src="./images/arepo_enterance.png" alt="Sandworth Lekki Phase Site Tour" loading="lazy"/>
           <div class="vcard-overlay">
-            <button class="vplay-btn" onclick="openVideo(this)" data-src="https://www.youtube.com/embed/VIDEO_ID_2?autoplay=1&rel=0" aria-label="Play Lekki phase site tour video">
+            <button class="vplay-btn" onclick="openVideo(this)" data-src="https://www.youtube.com/embed/ckZ0E5U6ojQ?autoplay=1&rel=0&start=2" aria-label="Play Lekki phase site tour video">
               <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5"/><path d="M10 8.5l6 3.5-6 3.5V8.5z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="vcard-badge"><span class="vduration">2:18</span></div>
         </div>
         <div class="vcard-body">
-          <span class="vcard-tag">Development Update</span>
+          <span class="vcard-tag">Property Tour</span>
           <h4>Sandworth Lekki Phase &mdash; Site Tour</h4>
           <p>A ground-level progress update on our newest Lekki development — from foundation to finishing touches.</p>
           <a class="vcard-cta" href="<?= SITE_URL  ?>/projects">View Project &#8594;</a>
@@ -231,14 +232,14 @@ require './partials/header.php';
         <div class="vcard-thumb">
           <img src="./images/Arepo-IV2-1024x576.jpg" alt="Why clients choose Sandworth" loading="lazy"/>
           <div class="vcard-overlay">
-            <button class="vplay-btn" onclick="openVideo(this)" data-src="https://www.youtube.com/watch?v=zEknZT7eamU&t=3s" aria-label="Play client testimonial video">
+            <button class="vplay-btn" onclick="openVideo(this)" data-src="https://www.youtube.com/embed/b2MkOo36EF4?autoplay=1&rel=0&start=1" aria-label="Play client testimonial video">
               <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5"/><path d="M10 8.5l6 3.5-6 3.5V8.5z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="vcard-badge"><span class="vduration">4:05</span></div>
         </div>
         <div class="vcard-body">
-          <span class="vcard-tag">Client Testimonial</span>
+          <span class="vcard-tag">Property Tour</span>
           <h4>Why Our Clients Choose Sandworth</h4>
           <p>Hear directly from homeowners and investors about their experience partnering with Sandworth Properties.</p>
           <a class="vcard-cta" href="<?= SITE_URL  ?>/projects">View Project &#8594;</a>

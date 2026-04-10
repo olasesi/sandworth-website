@@ -97,10 +97,10 @@ $schema = [
           <p class="pdp-loc">&#128205; <?= htmlspecialchars($p['location']) ?></p>
           <h1><?= htmlspecialchars($p['title']) ?></h1>
         </div>
-        <div class="pdp-price-box">
-          <span>Starting From</span>
-          <strong><?= $p['price'] ?></strong>
-        </div>
+        <!--<div class="pdp-price-box">-->
+          <!-- <span>Starting From</span>-->
+          <!--  <strong><?php //echo $p['price'] ?></strong> -->
+       <!-- </div>-->
       </div>
 
       <!-- Description -->
@@ -160,7 +160,7 @@ $schema = [
           <div class="pdp-srow"><span>Type</span><strong><?= htmlspecialchars($p['type']) ?></strong></div>
           <div class="pdp-srow"><span>Status</span><strong><?= htmlspecialchars($p['status']) ?></strong></div>
           <div class="pdp-srow"><span>Location</span><strong><?= htmlspecialchars($p['location']) ?></strong></div>
-          <div class="pdp-srow"><span>Price</span><strong><?= $p['price'] ?></strong></div>
+          <!--<div class="pdp-srow"><span>Price</span><strong><?php //echo $p['price']; ?></strong></div>-->
         </div>
       </div>
     </aside>

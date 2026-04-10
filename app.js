@@ -165,20 +165,38 @@ function openVideo(btn) {
   const lb  = document.getElementById('videoLightbox');
   const fr  = document.getElementById('videoFrame');
   if (!lb || !fr || !src) return;
-  fr.src = src;
-  lb.classList.add('open');
+
+  // Show spinner, hide stale iframe
+  fr.style.opacity = '0';
+  lb.classList.add('open', 'vlb-loading');
   document.body.style.overflow = 'hidden';
+
+  // Once iframe has loaded, fade it in and remove spinner
+  fr.onload = () => {
+    lb.classList.remove('vlb-loading');
+    fr.style.opacity = '1';
+  };
+
+  fr.src = src;
 }
 
 function closeVideo(e) {
-  if (e && e.target !== document.getElementById('videoLightbox') &&
-      !e.target.closest('.vlb-close')) return;
+  if (e && e.target) {
+    const isBackdrop = e.target === document.getElementById('videoLightbox');
+    const isCloseBtn = !!e.target.closest('.vlb-close');
+    if (!isBackdrop && !isCloseBtn) return;
+  }
   const lb = document.getElementById('videoLightbox');
   const fr = document.getElementById('videoFrame');
   if (!lb) return;
-  lb.classList.remove('open');
+  lb.classList.remove('open', 'vlb-loading');
   document.body.style.overflow = '';
-  setTimeout(() => { if (fr) fr.src = ''; }, 300);
+  setTimeout(() => {
+    if (fr) {
+      fr.src = '';
+      fr.style.opacity = '0';
+    }
+  }, 300);
 }
 
 document.addEventListener('keydown', e => {
